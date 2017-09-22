@@ -6,17 +6,23 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/Index.css">
+
 	<script src="bootstrap-3.3.7-dist/js/jquery-1.10.2.min.js"></script>
 	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <script>
 
-
+ 
 </script>
 
 <style>
- 
+ .sbody{margin-top:20px;;width:100%;height:100%;background-color:white;}
+ .userbody{width:100%;background-color:#;}
+ .imgbody{width:40px;height:40px;}
+.img{width:40px;height:40x}
+bbody{width:100%}
+.buttom{width:100%;height:20px;background-color:#9999999}
+.buttomone{width:30%;margin-left:70%}
 </style>
 <body style="background-color:#fff">
 <div class="container-fluid ">
@@ -50,48 +56,35 @@
 </nav>
 <!-- 头部导航-->
 
-<div class="well well-sm" style="margin-top:30px;width:100%;">
-
-<div class=" " style="margin-top:20px;;width:100%;height:100%;background-color:white">
-     <div  class="" style="width:100%;background-color:#">
-	            <div style="width:40px;height:40px"><img src="images/car_2.jpg" style="width:40px;height:40x"></div>
-				<div class="" style="width:100%;;">1313dadadadadasdddddddddddddd
-				ddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddddd
-				dddddddddddddddddddddddddddddddd
-				dddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddddd
-			</div>
-			<div style="width:100%;height:20px;background-color:#9999999"><div style="width:30%;margin-left:70%"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> &nbsp&nbsp&nbsp&nbsp &nbsp<span class="glyphicon glyphicon-comment" aria-hidden="true"></span></div></div>
-
-	 </div>
-</div>
+<div class="well well-sm sbody" style="margin-top:30px;width:100%;">
 
 
-<div class=" " style="margin-top:20px;;width:100%;height:100%;background-color:white">
-     <div  class="" style="width:100%;background-color:#">
-	            <div style="width:40px;height:40px"><img src="images/car_2.jpg" style="width:40px;height:40x"></div>
-				<div class="" style="width:100%;;">1313dadadadadasdddddddddddddd
-				ddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddddd
-				dddddddddddddddddddddddddddddddd
-				dddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddddd
-					dddddddddddddddddddddddddddddddd
-				dddddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddd
-				ddddddddddddddddddddddddddddddddd
-			</div>
-			<div style="width:100%;height:20px;background-color:#9999999"><div style="width:30%;margin-left:70%"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> &nbsp&nbsp&nbsp&nbsp &nbsp<span class="glyphicon glyphicon-comment" aria-hidden="true"></span></div></div>
-	 </div>
-</div>
 
 </div>
  </div>
  
- 
+ <script>
+ $(document).ready(function(){
+ show();
+ })
 
+function show(){
+	   var sbody=$("<div></div>").addClass("sbody");
+	   var userbody=$("<div></div>").addClass("userbody");
+	   var imgbody=$("<div></div>").addClass("imgbody");
+	   var img=$("<img>").addClass("img").attr("src","images/car_2.jpg");
+	   var bbody=$("<div></div>").addClass("bbody");
+	   var buttom=$("<div></div>").addClass("buttom");
+	   var buttomone=$("<div></div>").addClass("buttomone");
+	   var  span=$("<span></span>").addClass("glyphicon glyphicon-thumbs-up");
+		 var i=[0,2,3,4];
+	       $.each(i,function(i,n){
+		   
+	sbody.append(userbody.append(imgbody.append(img)).append(bbody.append("回到号到好多哦啊好好的好好的哈11")).append(buttom.append(buttomone.append($(span).attr("aria-hidden","true"))))).appendTo(".sbody");
+	
+		   
+		   })
+	  // 
+	} </script>
 	</body>
 </html>
